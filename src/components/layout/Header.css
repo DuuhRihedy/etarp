@@ -2,15 +2,17 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(8, 30, 61, 0.85);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid transparent;
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   transition: all var(--transition-base);
 }
 
 .header--scrolled {
-  border-bottom-color: var(--border);
-  box-shadow: var(--shadow-sm);
+  background: rgba(5, 20, 41, 0.95);
+  border-bottom-color: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .header__inner {
@@ -39,19 +41,20 @@
   padding: 0.5rem 0.75rem;
   font-size: 0.9375rem;
   font-weight: 500;
-  color: var(--text-secondary);
+  color: rgba(255, 255, 255, 0.8);
   border-radius: var(--radius-sm);
   transition: all var(--transition-fast);
 }
 
 .header__link:hover {
-  color: var(--text-primary);
-  background: var(--etarp-surface-alt);
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .header__link--active {
-  color: var(--etarp-blue);
+  color: var(--etarp-cyan);
   font-weight: 600;
+  background: rgba(0, 240, 255, 0.08);
 }
 
 .header__actions {
@@ -63,7 +66,10 @@
 .header__hamburger {
   display: none;
   padding: 0.5rem;
-  color: var(--text-primary);
+  color: #ffffff;
+  background: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .header__cta-mobile {
@@ -86,11 +92,14 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: var(--etarp-surface);
-    padding: var(--space-6) var(--container-padding);
+    background: #081e3d;
+    padding: var(--space-8) var(--container-padding);
     transform: translateX(100%);
-    transition: transform var(--transition-base);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     overflow-y: auto;
+    z-index: 2000;
+    display: flex;
+    flex-direction: column;
   }
 
   .header__nav--open {
@@ -100,18 +109,25 @@
   .header__list {
     flex-direction: column;
     align-items: stretch;
-    gap: 0;
+    gap: var(--space-2);
   }
 
   .header__link {
-    padding: var(--space-4) var(--space-4);
+    padding: var(--space-4);
     font-size: 1.0625rem;
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 0;
+  }
+  
+  .header__link--active {
+    background: rgba(0, 240, 255, 0.08);
+    border-bottom-color: var(--etarp-cyan);
   }
 
   .header__cta-mobile {
     display: block;
-    padding-top: var(--space-6);
+    padding-top: var(--space-8);
+    margin-top: auto;
   }
 
   .header__cta-mobile .btn {
