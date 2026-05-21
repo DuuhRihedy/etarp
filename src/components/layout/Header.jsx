@@ -42,8 +42,23 @@ export default function Header() {
           <img src={`${import.meta.env.BASE_URL}grupo-etarp.png`} alt="Grupo Etarp" height="40" />
         </Link>
 
+        <nav className="header__nav-desktop" aria-label="Navegação principal">
+          <ul className="header__list">
+            {NAV_ITEMS.map(({ label, path }) => (
+              <li key={path}>
+                <Link
+                  to={path}
+                  className={`header__link ${location.pathname === path ? 'header__link--active' : ''}`}
+                >
+                  {label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
         {createPortal(
-          <nav className={`header__nav ${menuOpen ? 'header__nav--open' : ''}`} aria-label="Navegação principal">
+          <nav className={`header__nav ${menuOpen ? 'header__nav--open' : ''}`} aria-label="Navegação móvel">
             <ul className="header__list">
               {NAV_ITEMS.map(({ label, path }) => (
                 <li key={path}>
