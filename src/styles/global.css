@@ -1,0 +1,149 @@
+/* ============ BASE ============ */
+body {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-primary);
+  background-color: var(--etarp-surface);
+}
+
+/* ============ TIPOGRAFIA ============ */
+h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2.75rem, 5vw + 1rem, 4.75rem);
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  color: var(--text-primary);
+}
+
+h2 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2rem, 3vw + 1rem, 3rem);
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  color: var(--text-primary);
+}
+
+h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(1.375rem, 1.5vw + 0.5rem, 1.75rem);
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+  color: var(--text-primary);
+}
+
+h4 {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1.125rem;
+  letter-spacing: normal;
+  line-height: 1.4;
+  color: var(--text-primary);
+}
+
+.lead {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: clamp(1.125rem, 1vw + 0.75rem, 1.375rem);
+  letter-spacing: normal;
+  line-height: 1.55;
+  color: var(--text-secondary);
+}
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.8125rem;
+  letter-spacing: 0.12em;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--etarp-cyan);
+}
+
+.caption {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.875rem;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+.kpi-number {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2.5rem, 3vw + 1rem, 3.5rem);
+  letter-spacing: -0.02em;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  color: var(--etarp-cyan);
+}
+
+/* ============ LINKS ============ */
+a:not([class]) {
+  color: var(--etarp-blue);
+  transition: color var(--transition-fast);
+}
+
+a:not([class]):hover {
+  color: var(--etarp-blue-hover);
+}
+
+/* ============ SELECTION ============ */
+::selection {
+  background-color: rgba(0, 184, 217, 0.15);
+  color: var(--text-primary);
+}
+
+/* ============ SCROLLBAR ============ */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--etarp-surface-alt);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: var(--radius-pill);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+/* ============ UTILITIES ============ */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.text-cyan {
+  color: var(--etarp-cyan);
+}
+
+.text-inverse {
+  color: var(--text-inverse);
+}
+
+/* ============ PAGE LAYOUT ============ */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}

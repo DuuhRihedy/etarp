@@ -1,0 +1,82 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9375rem;
+  line-height: 1;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  white-space: nowrap;
+  text-decoration: none;
+  border: 1.5px solid transparent;
+}
+
+.btn--md {
+  padding: 0.75rem 1.5rem;
+}
+
+.btn--sm {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+.btn--lg {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+}
+
+/* Primary */
+.btn--primary {
+  background-color: var(--etarp-blue);
+  color: #fff;
+  border-color: var(--etarp-blue);
+}
+.btn--primary:hover {
+  background-color: var(--etarp-blue-hover);
+  border-color: var(--etarp-blue-hover);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Ghost / Secondary */
+.btn--ghost {
+  background: transparent;
+  color: var(--etarp-navy);
+  border-color: var(--etarp-navy);
+}
+.btn--ghost:hover {
+  background-color: var(--etarp-navy);
+  color: #fff;
+}
+
+/* Inverse — on dark backgrounds */
+.btn--inverse {
+  background: #fff;
+  color: var(--etarp-navy);
+  border-color: #fff;
+}
+.btn--inverse:hover {
+  background-color: var(--etarp-cyan);
+  border-color: var(--etarp-cyan);
+  color: #fff;
+}
+
+/* Ghost Inverse — on dark backgrounds */
+.btn--ghost-inverse {
+  background: transparent;
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+.btn--ghost-inverse:hover {
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--etarp-cyan);
+  outline-offset: 2px;
+}

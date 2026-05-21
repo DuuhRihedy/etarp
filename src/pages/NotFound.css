@@ -1,0 +1,29 @@
+.notfound-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  text-align: center;
+  padding: var(--space-8);
+}
+
+.notfound-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+  max-width: 480px;
+}
+
+.notfound-icon {
+  color: var(--etarp-cyan);
+  margin-bottom: var(--space-2);
+}
+
+.notfound-container h1 {
+  font-size: clamp(2rem, 3vw + 1rem, 2.5rem);
+}
+
+.notfound-actions {
+  margin-top: var(--space-4);
+}

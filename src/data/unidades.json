@@ -1,0 +1,218 @@
+[
+  {
+    "id": "etarp-etiquetas",
+    "name": "Etarp Etiquetas e Rótulos",
+    "shortName": "Etarp Etiquetas",
+    "slug": "/etarp-etiquetas",
+    "colorVar": "var(--unit-etiquetas)",
+    "colorHex": "#F59E0B",
+    "icon": "Tag",
+    "logo": "/etarp/logos/etarp-etiquetas.png",
+    "description": "Fábrica própria de etiquetas e rótulos com impressão flexográfica e digital. Etiquetas de gôndola, rótulos personalizados, ribbons e insumos para automação industrial.",
+    "bullets": [
+      "Impressão flexográfica e digital",
+      "Etiquetas de código de barras e RFID",
+      "Rótulos personalizados em escala industrial"
+    ],
+    "heroTitle": "Etiquetas e rótulos com qualidade industrial",
+    "heroLead": "Da gôndola do varejo à linha de produção. Fábrica própria em Ribeirão Preto com capacidade para milhões de unidades por mês.",
+    "services": [
+      {
+        "title": "Etiquetas de Código de Barras",
+        "description": "Impressão térmica e termo-transferência para identificação e rastreabilidade de produtos.",
+        "icon": "Barcode"
+      },
+      {
+        "title": "Rótulos Personalizados",
+        "description": "Rótulos adesivos com impressão flexográfica em alta tiragem. Acabamento com verniz, laminação e hot stamping.",
+        "icon": "Palette"
+      },
+      {
+        "title": "Etiquetas para Gôndola",
+        "description": "Soluções para precificação no varejo com impressão sob demanda e formatos padronizados.",
+        "icon": "ShoppingCart"
+      },
+      {
+        "title": "Ribbons e Insumos",
+        "description": "Ribbons de cera, resina e misto para impressoras térmicas. Compatibilidade garantida com os principais modelos.",
+        "icon": "Ribbon"
+      },
+      {
+        "title": "Etiquetas RFID",
+        "description": "Tags e etiquetas RFID para controle de inventário, logística e automação de processos.",
+        "icon": "Radio"
+      },
+      {
+        "title": "Impressão Digital",
+        "description": "Pequenas tiragens com qualidade fotográfica. Ideal para lotes piloto e edições limitadas.",
+        "icon": "Printer"
+      }
+    ],
+    "faq": [
+      {
+        "question": "Qual o prazo médio de entrega?",
+        "answer": "{{PRAZO_ENTREGA_ETIQUETAS}} — Varia de acordo com o volume e tipo de acabamento solicitado."
+      },
+      {
+        "question": "Qual o pedido mínimo?",
+        "answer": "{{PEDIDO_MINIMO_ETIQUETAS}} — Trabalhamos com lotes industriais e pequenas tiragens via impressão digital."
+      },
+      {
+        "question": "Vocês atendem fora de São Paulo?",
+        "answer": "Sim. Atendemos todo o território nacional com logística própria e parceiros de transporte."
+      },
+      {
+        "question": "Posso enviar minha arte pronta?",
+        "answer": "Sim. Aceitamos arquivos em PDF, AI e CDR. Nossa equipe técnica faz a conferência de pré-impressão sem custo adicional."
+      },
+      {
+        "question": "Quais materiais estão disponíveis?",
+        "answer": "Trabalhamos com papel couchê, BOPP (filme plástico), vinil, poliéster e materiais especiais sob consulta."
+      }
+    ]
+  },
+  {
+    "id": "etarp-automacao",
+    "name": "Etarp Automação Comercial",
+    "shortName": "Etarp Automação",
+    "slug": "/etarp-automacao",
+    "colorVar": "var(--unit-automacao)",
+    "colorHex": "#1B4FE0",
+    "icon": "ScanBarcode",
+    "logo": "/etarp/logos/etarp-automacao.png",
+    "description": "Equipamentos para automação comercial e industrial. Impressoras térmicas, leitores, REP, projetos WMS e RFID. Modelos de comodato e locação.",
+    "bullets": [
+      "Impressoras térmicas e leitores de código",
+      "Projetos WMS, RFID e infraestrutura de TI",
+      "Modelos de comodato e locação flexíveis"
+    ],
+    "heroTitle": "Automação comercial para operações que não param",
+    "heroLead": "Impressoras, leitores, relógios de ponto e infraestrutura de TI. Venda, comodato ou locação — o modelo que faz sentido para o seu negócio.",
+    "services": [
+      {
+        "title": "Impressoras Térmicas",
+        "description": "Impressoras de etiquetas e recibos das principais marcas. Assistência técnica autorizada.",
+        "icon": "Printer"
+      },
+      {
+        "title": "Leitores de Código de Barras",
+        "description": "Leitores 1D e 2D com fio e sem fio. Modelos para balcão, gôndola e uso industrial.",
+        "icon": "ScanLine"
+      },
+      {
+        "title": "REP — Relógio de Ponto",
+        "description": "Relógios eletrônicos de ponto homologados pelo MTE. Biometria, cartão e senha.",
+        "icon": "Clock"
+      },
+      {
+        "title": "Projetos WMS",
+        "description": "Implementação de sistemas de gerenciamento de armazém com coletores de dados e integração ERP.",
+        "icon": "Warehouse"
+      },
+      {
+        "title": "Infraestrutura de TI",
+        "description": "Redes, cabeamento estruturado, servidores e suporte técnico para ambientes corporativos.",
+        "icon": "Server"
+      },
+      {
+        "title": "RFID e IoT",
+        "description": "Projetos de identificação por radiofrequência para controle de ativos, inventário e logística.",
+        "icon": "Radio"
+      }
+    ],
+    "faq": [
+      {
+        "question": "Como funciona o modelo de comodato?",
+        "answer": "No comodato, o equipamento é cedido mediante contrato de insumos. Você usa o hardware sem custo inicial, pagando apenas pelos suprimentos consumidos."
+      },
+      {
+        "question": "Vocês fazem assistência técnica?",
+        "answer": "Sim. Somos assistência técnica autorizada das principais marcas e oferecemos contratos de manutenção preventiva e corretiva."
+      },
+      {
+        "question": "Qual o prazo de instalação de um projeto WMS?",
+        "answer": "{{PRAZO_WMS}} — Depende da complexidade do armazém e integrações necessárias."
+      },
+      {
+        "question": "Atendem todo o Brasil?",
+        "answer": "Sim. Equipamentos com envio nacional e projetos de infraestrutura atendidos presencialmente em {{UF_ATENDIDAS}} estados."
+      },
+      {
+        "question": "Posso alugar equipamentos por curto período?",
+        "answer": "Sim. Oferecemos locação por evento, temporada ou contratos de longo prazo com condições especiais."
+      }
+    ]
+  },
+  {
+    "id": "foxone-software",
+    "name": "Foxone Software",
+    "shortName": "Foxone",
+    "slug": "/foxone-software",
+    "colorVar": "var(--unit-foxone)",
+    "colorHex": "#8B5CF6",
+    "icon": "Code2",
+    "logo": null,
+    "description": "Desenvolvimento de sistemas sob medida para Android, iOS e Desktop. Soluções que conectam hardware e operação em uma plataforma única.",
+    "bullets": [
+      "Apps nativos Android e iOS",
+      "Sistemas desktop integrados",
+      "Soluções sob medida para cada operação"
+    ],
+    "heroTitle": "Software sob medida que conecta sua operação",
+    "heroLead": "Sistemas para Android, iOS e Desktop desenvolvidos para resolver problemas reais. Da coleta de dados em campo ao painel de gestão.",
+    "services": [
+      {
+        "title": "Apps Mobile (Android/iOS)",
+        "description": "Aplicativos nativos para coleta de dados, força de vendas, gestão de equipes e controle de operações em campo.",
+        "icon": "Smartphone"
+      },
+      {
+        "title": "Sistemas Desktop",
+        "description": "Softwares para Windows com interface intuitiva e integração com bancos de dados locais e na nuvem.",
+        "icon": "Monitor"
+      },
+      {
+        "title": "Integrações e APIs",
+        "description": "Conectamos seu sistema a ERPs, bancos de dados, equipamentos de automação e serviços externos.",
+        "icon": "Plug"
+      },
+      {
+        "title": "Painéis e Dashboards",
+        "description": "Visualização de dados em tempo real para tomada de decisão. KPIs, relatórios e alertas configuráveis.",
+        "icon": "LayoutDashboard"
+      },
+      {
+        "title": "Consultoria de Sistemas",
+        "description": "Análise de processos, levantamento de requisitos e arquitetura de soluções sob medida.",
+        "icon": "FileSearch"
+      },
+      {
+        "title": "Suporte e Evolução",
+        "description": "Contratos de manutenção evolutiva com SLA definido. Seu sistema acompanha o crescimento da operação.",
+        "icon": "Wrench"
+      }
+    ],
+    "faq": [
+      {
+        "question": "Quanto tempo leva para desenvolver um sistema?",
+        "answer": "{{PRAZO_DESENVOLVIMENTO_FOXONE}} — Depende da complexidade. Projetos simples a partir de 4 semanas, sistemas completos de 3 a 6 meses."
+      },
+      {
+        "question": "Vocês fazem manutenção após a entrega?",
+        "answer": "Sim. Oferecemos contratos de suporte e evolução contínua com SLA e atualizações programadas."
+      },
+      {
+        "question": "Posso integrar com meu ERP atual?",
+        "answer": "Sim. Trabalhamos com APIs REST e integrações diretas com os principais ERPs do mercado."
+      },
+      {
+        "question": "Desenvolvem para qual plataforma?",
+        "answer": "Android, iOS e Windows. Também desenvolvemos soluções web quando faz sentido para o projeto."
+      },
+      {
+        "question": "Como funciona o processo de desenvolvimento?",
+        "answer": "Seguimos metodologia ágil: levantamento → prototipação → desenvolvimento em sprints → homologação → implantação → suporte."
+      }
+    ]
+  }
+]

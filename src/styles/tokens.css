@@ -1,0 +1,77 @@
+:root {
+  /* ============ BASE ============ */
+  --etarp-navy: #0B2C5C;
+  --etarp-navy-deep: #061B3D;
+  --etarp-surface: #FFFFFF;
+  --etarp-surface-alt: #F4F7FB;
+  --etarp-surface-tint: #EAF1FA;
+
+  /* ============ PRIMÁRIAS ============ */
+  --etarp-blue: #1B4FE0;
+  --etarp-blue-hover: #1640B8;
+  --etarp-cyan: #00B8D9;
+  --etarp-cyan-light: #4DD0E1;
+
+  /* ============ IDENTIDADE POR UNIDADE ============ */
+  --unit-etiquetas: #F59E0B;
+  --unit-automacao: #1B4FE0;
+  --unit-foxone: #8B5CF6;
+
+  /* ============ TEXTO ============ */
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --text-muted: #64748B;
+  --text-inverse: #F8FAFC;
+  --text-inverse-muted: #94A3B8;
+
+  /* ============ ESTRUTURA ============ */
+  --border: #E2E8F0;
+  --border-strong: #CBD5E1;
+  --border-dark: #1E3A5F;
+
+  /* ============ FEEDBACK ============ */
+  --success: #10B981;
+  --warning: #F59E0B;
+  --danger: #EF4444;
+
+  /* ============ SOMBRAS ============ */
+  --shadow-sm: 0 1px 2px rgba(11, 44, 92, 0.04);
+  --shadow-md: 0 4px 12px rgba(11, 44, 92, 0.06);
+  --shadow-lg: 0 12px 32px rgba(11, 44, 92, 0.10);
+  --shadow-cyan: 0 8px 24px rgba(0, 184, 217, 0.25);
+
+  /* ============ RAIO ============ */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-pill: 999px;
+
+  /* ============ ESPAÇAMENTO ============ */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  /* ============ LAYOUT ============ */
+  --container-max: 1240px;
+  --container-padding: clamp(1rem, 4vw, 2rem);
+
+  /* ============ TRANSIÇÕES ============ */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ============ TIPOGRAFIA ============ */
+  --font-display: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', Consolas, monospace;
+}

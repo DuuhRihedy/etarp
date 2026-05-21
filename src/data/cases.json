@@ -1,0 +1,10 @@
+[
+  {"id":"c01","client":"{{CLIENTE_1}}","segment":"Indústria","logo":null,"challenge":"Rastreabilidade de produtos em linha de montagem com múltiplos SKUs","result":"{{RESULTADO_CASE_1}}"},
+  {"id":"c02","client":"{{CLIENTE_2}}","segment":"Varejo","logo":null,"challenge":"Gestão de estoque em rede com 12 lojas e ruptura frequente","result":"{{RESULTADO_CASE_2}}"},
+  {"id":"c03","client":"{{CLIENTE_3}}","segment":"Logística","logo":null,"challenge":"Separação de pedidos manual com alto índice de erro","result":"{{RESULTADO_CASE_3}}"},
+  {"id":"c04","client":"{{CLIENTE_4}}","segment":"Indústria","logo":null,"challenge":"Controle de ativos de TI em planta industrial com 500+ equipamentos","result":"{{RESULTADO_CASE_4}}"},
+  {"id":"c05","client":"{{CLIENTE_5}}","segment":"Serviços","logo":null,"challenge":"Controle de jornada de 200 colaboradores em múltiplos turnos","result":"{{RESULTADO_CASE_5}}"},
+  {"id":"c06","client":"{{CLIENTE_6}}","segment":"Varejo","logo":null,"challenge":"Sistema de força de vendas integrado com ERP para equipe externa","result":"{{RESULTADO_CASE_6}}"},
+  {"id":"c07","client":"{{CLIENTE_7}}","segment":"Logística","logo":null,"challenge":"Implementação de WMS em centro de distribuição de 8.000m²","result":"{{RESULTADO_CASE_7}}"},
+  {"id":"c08","client":"{{CLIENTE_8}}","segment":"Indústria","logo":null,"challenge":"Migração de etiquetas manuais para impressão automatizada na linha","result":"{{RESULTADO_CASE_8}}"}
+]

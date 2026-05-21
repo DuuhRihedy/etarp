@@ -1,0 +1,115 @@
+.cases-hero {
+  background: radial-gradient(circle at 50% 50%, #0c336b 0%, #061c3c 100%);
+  padding: var(--space-20) 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cases-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-position: center;
+  pointer-events: none;
+}
+
+.cases-hero__container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+  position: relative;
+  z-index: 2;
+}
+
+.cases-hero h1 {
+  max-width: 800px;
+  color: #ffffff;
+}
+
+.cases-hero p {
+  max-width: 680px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.cases-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+}
+
+.case-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  padding: var(--space-6);
+  height: 100%;
+}
+
+.case-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.case-card__logo-placeholder {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-weight: 700;
+  font-size: 1.0625rem;
+  color: var(--etarp-navy);
+}
+
+.case-logo-icon {
+  color: var(--text-muted);
+}
+
+.case-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  flex: 1;
+}
+
+.case-card__challenge-title,
+.case-card__result-title {
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  margin-bottom: 0;
+}
+
+.case-card__challenge {
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.case-card__result {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--success);
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .cases-grid {
+    grid-template-columns: 1fr;
+  }
+}

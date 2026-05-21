@@ -1,0 +1,6 @@
+[
+  { "id": "industria", "name": "Indústria", "icon": "Factory", "solutions": ["Etiquetas de código de barras para rastreabilidade", "Rótulos adesivos para embalagens industriais", "Coletores de dados e leitores RFID", "Sistemas WMS para gestão de armazém", "Software de controle de produção"] },
+  { "id": "varejo", "name": "Varejo", "icon": "Store", "solutions": ["Etiquetas de gôndola e precificação", "Impressoras térmicas para PDV", "Leitores de código de barras 1D/2D", "Sistemas de frente de caixa", "Apps de força de vendas"] },
+  { "id": "logistica", "name": "Logística", "icon": "Truck", "solutions": ["Etiquetas de expedição e romaneio", "Coletores de dados para separação", "Sistemas WMS e roteirização", "Projetos RFID para rastreamento", "Dashboards de operação em tempo real"] },
+  { "id": "servicos", "name": "Serviços", "icon": "Briefcase", "solutions": ["REP — Relógio de ponto eletrônico", "Controle de acesso por biometria", "Infraestrutura de rede e TI", "Sistemas de gestão sob medida", "Suporte técnico e manutenção"] }
+]

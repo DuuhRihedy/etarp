@@ -1,0 +1,26 @@
+.kpi-bar {
+  background: var(--etarp-surface-tint);
+  padding: var(--space-12) 0;
+}
+
+.kpi-bar__container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-8);
+}
+
+@media (max-width: 768px) {
+  .kpi-bar__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-6);
+  }
+}
+
+@media (max-width: 480px) {
+  .kpi-bar__container {
+    grid-template-columns: 1fr 1fr;
+  }
+}

@@ -1,0 +1,37 @@
+.card {
+  background: var(--etarp-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: var(--space-6);
+  position: relative;
+  transition: all var(--transition-base);
+}
+
+.card--accent::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--card-accent, var(--etarp-cyan));
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+}
+
+.card--hover:hover {
+  border-color: var(--etarp-cyan);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.card--hover[role="button"] {
+  cursor: pointer;
+}
+
+.card h3 {
+  margin-bottom: var(--space-2);
+}
+
+.card p {
+  color: var(--text-secondary);
+}

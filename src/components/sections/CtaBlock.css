@@ -1,0 +1,47 @@
+.cta-block {
+  background: var(--etarp-navy);
+  padding: var(--space-20) 0;
+}
+
+.cta-block__container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-5);
+}
+
+.cta-block__title {
+  color: var(--text-inverse);
+  max-width: 640px;
+}
+
+.cta-block__lead {
+  color: var(--text-inverse-muted);
+  font-size: clamp(1rem, 1vw + 0.75rem, 1.25rem);
+  max-width: 540px;
+  line-height: 1.6;
+}
+
+.cta-block__actions {
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: var(--space-4);
+}
+
+@media (max-width: 480px) {
+  .cta-block__actions {
+    flex-direction: column;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .cta-block__actions .btn {
+    width: 100%;
+  }
+}

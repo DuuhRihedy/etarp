@@ -1,0 +1,120 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid transparent;
+  transition: all var(--transition-base);
+}
+
+.header--scrolled {
+  border-bottom-color: var(--border);
+  box-shadow: var(--shadow-sm);
+}
+
+.header__inner {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+}
+
+.header__logo img {
+  height: 40px;
+  width: auto;
+}
+
+.header__list {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.header__link {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+}
+
+.header__link:hover {
+  color: var(--text-primary);
+  background: var(--etarp-surface-alt);
+}
+
+.header__link--active {
+  color: var(--etarp-blue);
+  font-weight: 600;
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.header__hamburger {
+  display: none;
+  padding: 0.5rem;
+  color: var(--text-primary);
+}
+
+.header__cta-mobile {
+  display: none;
+}
+
+/* Mobile */
+@media (max-width: 1024px) {
+  .header__hamburger {
+    display: flex;
+  }
+
+  .header__cta-desktop {
+    display: none;
+  }
+
+  .header__nav {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--etarp-surface);
+    padding: var(--space-6) var(--container-padding);
+    transform: translateX(100%);
+    transition: transform var(--transition-base);
+    overflow-y: auto;
+  }
+
+  .header__nav--open {
+    transform: translateX(0);
+  }
+
+  .header__list {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .header__link {
+    padding: var(--space-4) var(--space-4);
+    font-size: 1.0625rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .header__cta-mobile {
+    display: block;
+    padding-top: var(--space-6);
+  }
+
+  .header__cta-mobile .btn {
+    width: 100%;
+  }
+}
