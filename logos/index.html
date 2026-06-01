@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GRUPO ETARP — Painel de Teste de Identidade Visual</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Premium Header -->
+  <header class="main-header">
+    <div class="header-container">
+      <div class="brand-info">
+        <span class="eyebrow">DIRETRIZES DE MARCA</span>
+        <h1>GRUPO ETARP</h1>
+        <p class="subtitle">Aprimorando ideias e gerando soluções — Do rótulo ao sistema que governa sua operação.</p>
+      </div>
+      <div class="logo-preview-header">
+        <img src="grupo-etarp-horizontal.svg" alt="Grupo Etarp Logo" class="brand-logo-img">
+      </div>
+    </div>
+  </header>
+
+  <main class="dashboard-container">
+
+    <!-- Section 1: Color Palette -->
+    <section class="dashboard-section" id="palette">
+      <div class="section-title">
+        <h2>Paleta de Cores Institucional</h2>
+        <p>Abaixo estão as cores oficiais da marca. Clique em qualquer card para copiar o código HEX.</p>
+      </div>
+      <div class="palette-grid">
+        <div class="color-card" onclick="copyColor('#0F172A')" style="--card-color: #0F172A; --text-color: #ffffff;">
+          <div class="color-swatch"></div>
+          <div class="color-details">
+            <h3>Azul Marinho Principal</h3>
+            <span class="color-role">Cor de Fundo & Marca Principal</span>
+            <code class="color-hex">#0F172A</code>
+          </div>
+        </div>
+
+        <div class="color-card" onclick="copyColor('#2563EB')" style="--card-color: #2563EB; --text-color: #ffffff;">
+          <div class="color-swatch"></div>
+          <div class="color-details">
+            <h3>Azul Royal Secundário</h3>
+            <span class="color-role">Destaques, Ações & Circuitos</span>
+            <code class="color-hex">#2563EB</code>
+          </div>
+        </div>
+
+        <div class="color-card" onclick="copyColor('#06B6D4')" style="--card-color: #06B6D4; --text-color: #0F172A;">
+          <div class="color-swatch"></div>
+          <div class="color-details">
+            <h3>Ciano Terciário</h3>
+            <span class="color-role">Caminho de Dados & Tecnologia</span>
+            <code class="color-hex">#06B6D4</code>
+          </div>
+        </div>
+
+        <div class="color-card" onclick="copyColor('#FFFFFF')" style="--card-color: #FFFFFF; --text-color: #0F172A; border: 1px solid #e2e8f0;">
+          <div class="color-swatch"></div>
+          <div class="color-details">
+            <h3>Branco Secundário</h3>
+            <span class="color-role">Fundos, Textos & Contraste</span>
+            <code class="color-hex">#FFFFFF</code>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Logo Variations Showcase -->
+    <section class="dashboard-section" id="logo-assets">
+      <div class="section-title">
+        <h2>Variações do Logotipo</h2>
+        <p>Explore as 4 versões vetoriais criadas. Você pode alternar o fundo de cada card para testar o contraste ou copiar o código SVG diretamente.</p>
+      </div>
+
+      <div class="assets-grid">
+        <!-- Card 1: Horizontal Logo -->
+        <div class="asset-card" id="card-horizontal">
+          <div class="asset-header">
+            <h3>Logotipo Horizontal Principal</h3>
+            <span class="badge">Uso Recomendado</span>
+          </div>
+          <div class="asset-preview-container bg-light">
+            <img src="grupo-etarp-horizontal.svg" alt="ETARP Horizontal Logo" class="preview-img">
+          </div>
+          <div class="asset-actions">
+            <button class="btn btn-secondary" onclick="toggleBg('card-horizontal')">Alternar Fundo</button>
+            <a href="grupo-etarp-horizontal.svg" download class="btn btn-primary">Baixar SVG</a>
+          </div>
+        </div>
+
+        <!-- Card 2: Vertical Logo -->
+        <div class="asset-card" id="card-vertical">
+          <div class="asset-header">
+            <h3>Logotipo Vertical Stacked</h3>
+            <span class="badge">Fachadas & Uniformes</span>
+          </div>
+          <div class="asset-preview-container bg-light">
+            <img src="grupo-etarp-vertical.svg" alt="ETARP Vertical Logo" class="preview-img preview-vertical">
+          </div>
+          <div class="asset-actions">
+            <button class="btn btn-secondary" onclick="toggleBg('card-vertical')">Alternar Fundo</button>
+            <a href="grupo-etarp-vertical.svg" download class="btn btn-primary">Baixar SVG</a>
+          </div>
+        </div>
+
+        <!-- Card 3: Standalone Icon -->
+        <div class="asset-card" id="card-icon">
+          <div class="asset-header">
+            <h3>Símbolo Circuito Hexagonal</h3>
+            <span class="badge">Favicon & Redes Sociais</span>
+          </div>
+          <div class="asset-preview-container bg-light">
+            <img src="grupo-etarp-icon.svg" alt="ETARP Circuit Icon" class="preview-img preview-icon">
+          </div>
+          <div class="asset-actions">
+            <button class="btn btn-secondary" onclick="toggleBg('card-icon')">Alternar Fundo</button>
+            <a href="grupo-etarp-icon.svg" download class="btn btn-primary">Baixar SVG</a>
+          </div>
+        </div>
+
+        <!-- Card 4: Monochromatic Logo -->
+        <div class="asset-card" id="card-mono">
+          <div class="asset-header">
+            <h3>Logotipo Monocromático</h3>
+            <span class="badge">Silkscreen & Gravação Física</span>
+          </div>
+          <div class="asset-preview-container bg-light">
+            <img src="grupo-etarp-mono.svg" alt="ETARP Monochromatic Logo" class="preview-img">
+          </div>
+          <div class="asset-actions">
+            <button class="btn btn-secondary" onclick="toggleBg('card-mono')">Alternar Fundo</button>
+            <a href="grupo-etarp-mono.svg" download class="btn btn-primary">Baixar SVG</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Applications & Mockups Showcase -->
+    <section class="dashboard-section" id="mockups">
+      <div class="section-title">
+        <h2>Simulação de Uso Real (Mockups Interativos)</h2>
+        <p>Passe o mouse por cima ou interaja com os cards para ver as simulações em 3D dos diferentes usos da marca, seguindo a referência do manual.</p>
+      </div>
+
+      <div class="mockups-grid">
+        <!-- Mug Mockup -->
+        <div class="mockup-card">
+          <div class="mockup-header">
+            <span class="mockup-num">01</span>
+            <h3>Gravação em Caneca 3D</h3>
+          </div>
+          <div class="mockup-canvas canvas-mug">
+            <div class="scene-3d">
+              <div class="mug">
+                <div class="mug-handle"></div>
+                <div class="mug-body">
+                  <div class="mug-wrap">
+                    <img src="grupo-etarp-mono.svg" alt="Logo na caneca" class="mug-logo">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mockup-footer">
+            <p>Caneca corporativa de porcelana preta acetinada com gravação a laser fosca do logotipo monocromático.</p>
+          </div>
+        </div>
+
+        <!-- Keychain Mockup -->
+        <div class="mockup-card">
+          <div class="mockup-header">
+            <span class="mockup-num">02</span>
+            <h3>Chaveiro Executivo Metálico</h3>
+          </div>
+          <div class="mockup-canvas canvas-keychain">
+            <div class="keychain-holder">
+              <div class="keychain-ring"></div>
+              <div class="keychain-leather">
+                <div class="keychain-plate">
+                  <img src="grupo-etarp-icon.svg" alt="Logo Chaveiro" class="keychain-logo">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mockup-footer">
+            <p>Chaveiro executivo em couro legítimo marinho com placa central cromada escovada e brasão em baixo relevo.</p>
+          </div>
+        </div>
+
+        <!-- Vehicle Wrap Mockup -->
+        <div class="mockup-card">
+          <div class="mockup-header">
+            <span class="mockup-num">03</span>
+            <h3>Plotagem de Frota (Van de Serviços)</h3>
+          </div>
+          <div class="mockup-canvas canvas-vehicle">
+            <div class="van-mockup">
+              <!-- Van Outline -->
+              <div class="van-wheel wheel-left"></div>
+              <div class="van-wheel wheel-right"></div>
+              <div class="van-window"></div>
+              <div class="van-door-line"></div>
+              <!-- Van Wrap Details -->
+              <div class="van-stripe"></div>
+              <img src="grupo-etarp-horizontal.svg" alt="Logo na Van" class="van-logo">
+              <div class="van-info-text">SISTEMAS • ETIQUETAS • AUTOMAÇÃO</div>
+            </div>
+          </div>
+          <div class="mockup-footer">
+            <p>Plotagem em vinil adesivo de alta performance para veículos de suporte técnico e entregas do grupo.</p>
+          </div>
+        </div>
+
+        <!-- Corporate Facade Mockup -->
+        <div class="mockup-card">
+          <div class="mockup-header">
+            <span class="mockup-num">04</span>
+            <h3>Fachada Comercial Noturna</h3>
+          </div>
+          <div class="mockup-canvas canvas-facade">
+            <div class="wall-background">
+              <div class="facade-structure">
+                <div class="glowing-logo-holder">
+                  <img src="grupo-etarp-vertical.svg" alt="Glow Logo Fachada" class="facade-logo-img">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mockup-footer">
+            <p>Logotipo corporativo em acrílico 3D recortado a laser com iluminação em LED traseira neon ciano/royal.</p>
+          </div>
+        </div>
+
+        <!-- Stationery Mockup -->
+        <div class="mockup-card">
+          <div class="mockup-header">
+            <span class="mockup-num">05</span>
+            <h3>Papelaria & Cartão de Visitas</h3>
+          </div>
+          <div class="mockup-canvas canvas-stationery">
+            <div class="stationery-scene">
+              <div class="letterhead">
+                <div class="letter-header">
+                  <img src="grupo-etarp-horizontal.svg" alt="Logo papel" class="letter-logo">
+                </div>
+                <div class="letter-body-lines">
+                  <div class="line"></div>
+                  <div class="line"></div>
+                  <div class="line width-80"></div>
+                </div>
+              </div>
+              <div class="business-card">
+                <img src="grupo-etarp-icon.svg" alt="Logo cartao" class="card-logo-icon">
+                <div class="card-name">GRUPO ETARP</div>
+                <div class="card-sub">Inovação e Precisão Industrial</div>
+              </div>
+            </div>
+          </div>
+          <div class="mockup-footer">
+            <p>Papel timbrado em textura algodão e cartão de visitas executivo em papel Couché 300g com verniz localizado.</p>
+          </div>
+        </div>
+
+        <!-- Uniform Mockup -->
+        <div class="mockup-card">
+          <div class="mockup-header">
+            <span class="mockup-num">06</span>
+            <h3>Uniforme Corporativo (Camisa Polo)</h3>
+          </div>
+          <div class="mockup-canvas canvas-uniform">
+            <div class="shirt-fabric">
+              <div class="shirt-collar"></div>
+              <div class="shirt-placket">
+                <div class="shirt-button"></div>
+                <div class="shirt-button"></div>
+              </div>
+              <div class="stitched-badge">
+                <img src="grupo-etarp-icon.svg" alt="Badge bordado" class="badge-logo-img">
+              </div>
+            </div>
+          </div>
+          <div class="mockup-footer">
+            <p>Camisa Polo em tecido Piquet marinho com o circuito hexagonal bordado em alta definição no peito.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="main-footer">
+    <p>© 2026 GRUPO ETARP. Todos os direitos reservados. Projeto de Identidade Visual Vetorial.</p>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast">Texto copiado!</div>
+
+  <!-- Clipboard JS Helper -->
+  <script>
+    function copyColor(hex) {
+      navigator.clipboard.writeText(hex).then(() => {
+        showToast("Cor " + hex + " copiada para a área de transferência!");
+      });
+    }
+
+    function toggleBg(cardId) {
+      const container = document.querySelector("#" + cardId + " .asset-preview-container");
+      if (container.classList.contains("bg-light")) {
+        container.classList.remove("bg-light");
+        container.classList.add("bg-dark");
+      } else {
+        container.classList.remove("bg-dark");
+        container.classList.add("bg-light");
+      }
+    }
+
+    function showToast(message) {
+      const toast = document.getElementById("toast");
+      toast.innerText = message;
+      toast.classList.add("show");
+      setTimeout(() => {
+        toast.classList.remove("show");
+      }, 3000);
+    }
+  </script>
+</body>
+</html>
