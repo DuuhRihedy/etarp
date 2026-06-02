@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import './Branding.css';
 import Container from '../components/layout/Container';
-import Header from '../components/layout/Header';
-import Footer from '../components/layout/Footer';
 
 const brands = [
   {
@@ -44,7 +42,6 @@ export default function Branding() {
 
   return (
     <>
-      <Header />
       <div className="branding-page">
         <section className="branding-hero">
           <Container>
@@ -80,19 +77,19 @@ export default function Branding() {
             <div className="logos-grid">
               <div className="logo-card light">
                 <h3>Horizontal Escuro</h3>
-                <img src={`/logos/${activeBrand.folder}/horizontal.svg`} alt="Horizontal Light" />
+                <img src={`${import.meta.env.BASE_URL}logos/${activeBrand.folder}/horizontal.svg`} alt="Horizontal Light" />
               </div>
               <div className="logo-card dark">
                 <h3>Horizontal Claro (Dark Mode)</h3>
-                <img src={`/logos/${activeBrand.folder}/horizontal-dark.svg`} alt="Horizontal Dark" />
+                <img src={`${import.meta.env.BASE_URL}logos/${activeBrand.folder}/horizontal-dark.svg`} alt="Horizontal Dark" />
               </div>
               <div className="logo-card icon-card">
                 <h3>Ícone Base</h3>
-                <img src={`/logos/${activeBrand.folder}/icon.svg`} alt="Ícone" className="only-icon" />
+                <img src={`${import.meta.env.BASE_URL}logos/${activeBrand.folder}/icon.svg`} alt="Ícone" className="only-icon" />
               </div>
               <div className="logo-card square-card">
                 <h3>Avatar (Square)</h3>
-                <img src={`/logos/${activeBrand.folder}/square.svg`} alt="Avatar" className="square-img" />
+                <img src={`${import.meta.env.BASE_URL}logos/${activeBrand.folder}/square.svg`} alt="Avatar" className="square-img" />
               </div>
             </div>
 
@@ -104,25 +101,25 @@ export default function Branding() {
                 
                 {/* T-SHIRT MOCKUP */}
                 <div className="mockup-card">
-                  <img src="/mockups/tshirt.png" alt="T-Shirt Mockup" className="mockup-bg" />
+                  <img src={`${import.meta.env.BASE_URL}mockups/tshirt.png`} alt="T-Shirt Mockup" className="mockup-bg" />
                   <div className="mockup-overlay tshirt-overlay">
-                    <img src={`/logos/${activeBrand.folder}/horizontal-dark.svg`} alt="Logo" />
+                    <img src={`${import.meta.env.BASE_URL}logos/${activeBrand.folder}/horizontal-dark.svg`} alt="Logo" />
                   </div>
                 </div>
 
                 {/* VAN MOCKUP */}
                 <div className="mockup-card">
-                  <img src="/mockups/van.png" alt="Van Mockup" className="mockup-bg" />
+                  <img src={`${import.meta.env.BASE_URL}mockups/van.png`} alt="Van Mockup" className="mockup-bg" />
                   <div className="mockup-overlay van-overlay">
-                    <img src={`/logos/${activeBrand.folder}/horizontal.svg`} alt="Logo" />
+                    <img src={`${import.meta.env.BASE_URL}logos/${activeBrand.folder}/horizontal.svg`} alt="Logo" />
                   </div>
                 </div>
 
                 {/* MUG MOCKUP */}
                 <div className="mockup-card">
-                  <img src="/mockups/mug.png" alt="Mug Mockup" className="mockup-bg" />
+                  <img src={`${import.meta.env.BASE_URL}mockups/mug.png`} alt="Mug Mockup" className="mockup-bg" />
                   <div className="mockup-overlay mug-overlay">
-                    <img src={`/logos/${activeBrand.folder}/icon.svg`} alt="Logo" />
+                    <img src={`${import.meta.env.BASE_URL}logos/${activeBrand.folder}/icon.svg`} alt="Logo" />
                   </div>
                 </div>
 
@@ -131,7 +128,6 @@ export default function Branding() {
           </Container>
         </section>
       </div>
-      <Footer />
     </>
   );
 }
