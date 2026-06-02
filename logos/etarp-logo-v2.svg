@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 290 210" fill="none">
+  <defs>
+    <linearGradient id="data-flow" gradientUnits="userSpaceOnUse" x1="35" y1="88" x2="158" y2="88">
+      <stop offset="0%" stop-color="#00D4FF"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+    <linearGradient id="accent-bar" gradientUnits="userSpaceOnUse" x1="55" y1="7" x2="21" y2="41">
+      <stop offset="0%" stop-color="#4DAAFF"/>
+      <stop offset="100%" stop-color="#1E44A8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Hex body - Segment 1: Top edge → Upper-right chamfer → Right side -->
+  <path d="M 67,15 L 223,15 L 261,51 L 261,159"
+        stroke="#1E44A8" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Hex body - Segment 2: Bottom edge → Lower-left chamfer → Left side -->
+  <path d="M 223,195 L 67,195 L 29,159 L 29,51"
+        stroke="#1E44A8" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Floating bar - Upper left (gradient accent) -->
+  <line x1="55" y1="7" x2="21" y2="41"
+        stroke="url(#accent-bar)" stroke-width="9" stroke-linecap="round"/>
+
+  <!-- Floating bar - Lower right -->
+  <line x1="235" y1="203" x2="269" y2="169"
+        stroke="#1E44A8" stroke-width="9" stroke-linecap="round"/>
+
+  <!-- Cyan data-flow line (horizontal) -->
+  <line x1="35" y1="88" x2="158" y2="88"
+        stroke="url(#data-flow)" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Navy bridge line (from node toward lower-right) -->
+  <line x1="162" y1="102" x2="253" y2="155"
+        stroke="#0D1766" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Junction node circle -->
+  <circle cx="160" cy="96" r="6" fill="#0D1766"/>
+</svg>

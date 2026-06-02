@@ -20,7 +20,7 @@ Abaixo estão todos os placeholders mapeados e prontos para serem substituídos 
 | `{{PRAZO_ENTREGA_ETIQUETAS}}` | `unidades.json` | Prazo médio de entrega de lotes industriais de etiquetas. |
 | `{{PEDIDO_MINIMO_ETIQUETAS}}` | `unidades.json` | Pedido mínimo em metros quadrados ou tiragem para flexografia. |
 | `{{PRAZO_WMS}}` | `unidades.json` | Prazo de entrega/implantação de projetos WMS. |
-| `{{PRAZO_DESENVOLVIMENTO_FOXONE}}` | `unidades.json` | Tempo médio para entrega de projetos sob medida. |
+| `{{PRAZO_LOCACAO_ETARP}}` | `unidades.json` | Tempo médio para entrega de projetos e locações. |
 
 ## 👥 Liderança e Governança (`/grupo`)
 

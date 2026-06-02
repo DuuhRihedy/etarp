@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <div id="container">
+    <object id="svg1" data="_reference/logo-certo.svg" type="image/svg+xml" onload="onSvgLoad(this)"></object>
+    <object id="svg2" data="_reference/logo-certo-e-melhor.svg" type="image/svg+xml" onload="onSvgLoad(this)"></object>
+  </div>
+  <pre id="output"></pre>
+  <script>
+    function onSvgLoad(obj) {
+      const svgDoc = obj.contentDocument;
+      if (!svgDoc) return;
+      const svg = svgDoc.documentElement;
+      
+      // Force SVGs to render fully to get accurate BBox
+      const gElements = svg.querySelectorAll('g');
+      let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+      
+      const paths = svg.querySelectorAll('path');
+      paths.forEach(p => {
+         try {
+             let bbox = p.getBBox();
+             if (bbox.width > 0 && bbox.height > 0) {
+                 minX = Math.min(minX, bbox.x);
+                 minY = Math.min(minY, bbox.y);
+                 maxX = Math.max(maxX, bbox.x + bbox.width);
+                 maxY = Math.max(maxY, bbox.y + bbox.height);
+             }
+         } catch(e) {}
+      });
+      
+      const out = document.getElementById('output');
+      out.textContent += obj.id + " BBOX: " + minX + " " + minY + " " + (maxX - minX) + " " + (maxY - minY) + "\n";
+    }
+  </script>
+</body>
+</html>

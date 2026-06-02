@@ -1,6 +1,6 @@
 # Grupo Etarp — Novo Site Institucional B2B
 
-Este repositório contém a reformulação completa do portal do **Grupo Etarp**, consolidando 21 páginas legadas em uma plataforma B2B moderna, limpa, robusta e responsiva, inspirada nos padrões estéticos **V360, Senior Sistemas e TOTVS Cloud**.
+Este repositório contém a reformulação completa do portal do **Grupo Etarp**, consolidando 21 páginas legadas em uma plataforma B2B moderna, limpa, robusta e responsiva, inspirada nos padrões estéticos **V360, Senior Sistemas e TOTVS Cloud**. O ecossistema abrange as unidades de Etiquetas, Automação e Locações.
 
 ## 🚀 Como Executar Localmente
 
