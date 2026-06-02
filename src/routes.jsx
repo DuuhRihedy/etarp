@@ -8,6 +8,7 @@ import FoxoneSoftware from './pages/FoxoneSoftware';
 import Solucoes from './pages/Solucoes';
 import Cases from './pages/Cases';
 import Contato from './pages/Contato';
+import Branding from './pages/Branding';
 import NotFound from './pages/NotFound';
 
 export default function AppRoutes() {
@@ -21,6 +22,7 @@ export default function AppRoutes() {
       <Route path="/solucoes" element={<Solucoes />} />
       <Route path="/cases" element={<Cases />} />
       <Route path="/contato" element={<Contato />} />
+      <Route path="/branding" element={<Branding />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

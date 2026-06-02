@@ -1,0 +1,233 @@
+.branding-page {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  padding-bottom: 80px;
+}
+
+.branding-hero {
+  background: var(--color-primary);
+  color: white;
+  padding: 140px 0 60px;
+  text-align: center;
+}
+
+.branding-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  font-weight: 800;
+}
+
+.branding-hero p {
+  color: #a0aec0;
+  font-size: 1.2rem;
+}
+
+.branding-nav-section {
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 80px;
+  z-index: 100;
+}
+
+.brand-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  overflow-x: auto;
+}
+
+.brand-tab {
+  padding: 20px 30px;
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #4a5568;
+  cursor: pointer;
+  border-bottom: 4px solid transparent;
+  transition: all 0.3s;
+  white-space: nowrap;
+}
+
+.brand-tab:hover {
+  color: var(--color-primary);
+}
+
+.brand-tab.active {
+  color: var(--color-primary);
+}
+
+.brand-content {
+  padding: 60px 0;
+}
+
+.brand-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.brand-header h2 {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.brand-desc {
+  font-size: 1.2rem;
+  color: #718096;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.logos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 80px;
+}
+
+.logo-card {
+  border-radius: 16px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 250px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.logo-card h3 {
+  margin-bottom: 30px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.7;
+}
+
+.logo-card img {
+  width: 80%;
+  max-width: 400px;
+}
+
+.logo-card.light {
+  background: white;
+  color: #1a202c;
+}
+
+.logo-card.dark {
+  background: var(--primary);
+  color: white;
+}
+
+.logo-card.icon-card {
+  background: white;
+}
+
+.logo-card.square-card {
+  background: #edf2f7;
+}
+
+.only-icon {
+  width: 120px !important;
+}
+
+.square-img {
+  width: 150px !important;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Mockups Section */
+.mockups-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #1a202c;
+}
+
+.mockups-section p {
+  color: #718096;
+  margin-bottom: 40px;
+}
+
+.mockups-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.mockup-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+  background: #000;
+  aspect-ratio: 4/5;
+}
+
+.mockup-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mockup-overlay {
+  position: absolute;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Specific Mockup Placements */
+
+/* T-shirt: Logo on the left chest or center chest */
+.tshirt-overlay {
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  mix-blend-mode: screen;
+  opacity: 0.9;
+}
+.tshirt-overlay img {
+  width: 100%;
+  filter: drop-shadow(0px 2px 5px rgba(0,0,0,0.5));
+}
+
+/* Van: Logo on the side panel */
+.van-overlay {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%) perspective(800px) rotateY(-15deg);
+  width: 50%;
+  mix-blend-mode: multiply;
+  opacity: 0.85;
+}
+.van-overlay img {
+  width: 100%;
+}
+
+/* Mug: Logo on the front curve */
+.mug-overlay {
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25%;
+  mix-blend-mode: multiply;
+  opacity: 0.9;
+}
+.mug-overlay img {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .logos-grid {
+    grid-template-columns: 1fr;
+  }
+  .mockups-grid {
+    grid-template-columns: 1fr;
+  }
+}

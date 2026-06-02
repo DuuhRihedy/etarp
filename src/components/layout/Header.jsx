@@ -12,6 +12,7 @@ const NAV_ITEMS = [
   { label: 'Foxone', path: '/foxone-software' },
   { label: 'Soluções', path: '/solucoes' },
   { label: 'Cases', path: '/cases' },
+  { label: 'Branding', path: '/branding' },
   { label: 'Contato', path: '/contato' },
 ];
 
