@@ -12,7 +12,7 @@ export default function Footer() {
             <ul className="footer__list">
               <li><Link to="/etarp-etiquetas">Etarp Etiquetas e Rótulos</Link></li>
               <li><Link to="/etarp-automacao">Etarp Automação Comercial</Link></li>
-              <li><Link to="/foxone-software">Foxone Software</Link></li>
+              <li><Link to="/etarp-locacoes">Etarp Locações</Link></li>
             </ul>
           </div>
 

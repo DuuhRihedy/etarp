@@ -144,74 +144,74 @@
     ]
   },
   {
-    "id": "foxone-software",
-    "name": "Foxone Software",
-    "shortName": "Foxone",
-    "slug": "/foxone-software",
-    "colorVar": "var(--unit-foxone)",
-    "colorHex": "#8B5CF6",
-    "icon": "Code2",
+    "id": "etarp-locacoes",
+    "name": "Etarp Locações",
+    "shortName": "Locações",
+    "slug": "/etarp-locacoes",
+    "colorVar": "var(--unit-locacoes)",
+    "colorHex": "#FF7A00",
+    "icon": "Repeat",
     "logo": null,
-    "description": "Desenvolvimento de sistemas sob medida para Android, iOS e Desktop. Soluções que conectam hardware e operação em uma plataforma única.",
+    "description": "Locação inteligente de equipamentos de coleta de dados e impressão. Reduza custos, elimine depreciação e mantenha sua operação rodando com suporte técnico incluso.",
     "bullets": [
-      "Apps nativos Android e iOS",
-      "Sistemas desktop integrados",
-      "Soluções sob medida para cada operação"
+      "Coletores de Dados e Leitores",
+      "Impressoras Térmicas e Etiquetas",
+      "Backup garantido (Spare Part)"
     ],
-    "heroTitle": "Software sob medida que conecta sua operação",
-    "heroLead": "Sistemas para Android, iOS e Desktop desenvolvidos para resolver problemas reais. Da coleta de dados em campo ao painel de gestão.",
+    "heroTitle": "Aluguel Inteligente para sua Operação",
+    "heroLead": "Não imobilize capital. Alugue os melhores equipamentos de automação com manutenção inclusa e garantia de substituição em caso de falha.",
     "services": [
       {
-        "title": "Apps Mobile (Android/iOS)",
-        "description": "Aplicativos nativos para coleta de dados, força de vendas, gestão de equipes e controle de operações em campo.",
+        "title": "Coletores de Dados",
+        "description": "Locação de coletores modernos (Android) para logística e varejo. Diversos modelos e formatos de leitura.",
         "icon": "Smartphone"
       },
       {
-        "title": "Sistemas Desktop",
-        "description": "Softwares para Windows com interface intuitiva e integração com bancos de dados locais e na nuvem.",
-        "icon": "Monitor"
+        "title": "Impressoras Térmicas",
+        "description": "Impressoras desktop e industriais para etiquetas e códigos de barras com manutenção inclusa.",
+        "icon": "Printer"
       },
       {
-        "title": "Integrações e APIs",
-        "description": "Conectamos seu sistema a ERPs, bancos de dados, equipamentos de automação e serviços externos.",
-        "icon": "Plug"
+        "title": "Leitores de Código de Barras",
+        "description": "Leitores 1D/2D, com e sem fio, para ponto de venda e controle de estoque.",
+        "icon": "Scan"
       },
       {
-        "title": "Painéis e Dashboards",
-        "description": "Visualização de dados em tempo real para tomada de decisão. KPIs, relatórios e alertas configuráveis.",
-        "icon": "LayoutDashboard"
+        "title": "Equipamentos de Backup",
+        "description": "Spare part incluso. Quebrou, trocou. Sua operação não para nunca.",
+        "icon": "RefreshCcw"
       },
       {
-        "title": "Consultoria de Sistemas",
-        "description": "Análise de processos, levantamento de requisitos e arquitetura de soluções sob medida.",
-        "icon": "FileSearch"
-      },
-      {
-        "title": "Suporte e Evolução",
-        "description": "Contratos de manutenção evolutiva com SLA definido. Seu sistema acompanha o crescimento da operação.",
+        "title": "Manutenção SLA",
+        "description": "Equipe técnica dedicada e suporte remoto rápido, garantido em contrato.",
         "icon": "Wrench"
+      },
+      {
+        "title": "Atualização Tecnológica",
+        "description": "Ao fim do contrato, renove com equipamentos de última geração sem custos absurdos.",
+        "icon": "ArrowUpCircle"
       }
     ],
     "faq": [
       {
-        "question": "Quanto tempo leva para desenvolver um sistema?",
-        "answer": "{{PRAZO_DESENVOLVIMENTO_FOXONE}} — Depende da complexidade. Projetos simples a partir de 4 semanas, sistemas completos de 3 a 6 meses."
+        "question": "Qual o tempo mínimo de contrato?",
+        "answer": "Trabalhamos com contratos flexíveis, desde locações curtas para inventários (sazonais) até contratos de 12 a 36 meses."
       },
       {
-        "question": "Vocês fazem manutenção após a entrega?",
-        "answer": "Sim. Oferecemos contratos de suporte e evolução contínua com SLA e atualizações programadas."
+        "question": "O que acontece se o equipamento quebrar?",
+        "answer": "Nosso contrato prevê Spare Part (equipamento de backup). Caso não possa ser resolvido remotamente, enviamos uma peça de reposição imediatamente."
       },
       {
-        "question": "Posso integrar com meu ERP atual?",
-        "answer": "Sim. Trabalhamos com APIs REST e integrações diretas com os principais ERPs do mercado."
+        "question": "A manutenção já está inclusa no valor?",
+        "answer": "Sim. Todos os custos de manutenção preventiva e corretiva por desgaste natural estão cobertos pelo contrato."
       },
       {
-        "question": "Desenvolvem para qual plataforma?",
-        "answer": "Android, iOS e Windows. Também desenvolvemos soluções web quando faz sentido para o projeto."
+        "question": "Posso comprar os equipamentos ao final do contrato?",
+        "answer": "Dependendo da modalidade do contrato, oferecemos condições facilitadas para a aquisição do parque tecnológico."
       },
       {
-        "question": "Como funciona o processo de desenvolvimento?",
-        "answer": "Seguimos metodologia ágil: levantamento → prototipação → desenvolvimento em sprints → homologação → implantação → suporte."
+        "question": "Quais marcas vocês alugam?",
+        "answer": "Trabalhamos com os melhores parceiros do mercado global, focando em equipamentos robustos e homologados."
       }
     ]
   }

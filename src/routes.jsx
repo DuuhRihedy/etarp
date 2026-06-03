@@ -4,7 +4,7 @@ import Home from './pages/Home';
 import Grupo from './pages/Grupo';
 import EtarpEtiquetas from './pages/EtarpEtiquetas';
 import EtarpAutomacao from './pages/EtarpAutomacao';
-import FoxoneSoftware from './pages/FoxoneSoftware';
+import EtarpLocacoes from './pages/EtarpLocacoes';
 import Solucoes from './pages/Solucoes';
 import Cases from './pages/Cases';
 import Contato from './pages/Contato';
@@ -18,7 +18,7 @@ export default function AppRoutes() {
       <Route path="/grupo" element={<Grupo />} />
       <Route path="/etarp-etiquetas" element={<EtarpEtiquetas />} />
       <Route path="/etarp-automacao" element={<EtarpAutomacao />} />
-      <Route path="/foxone-software" element={<FoxoneSoftware />} />
+      <Route path="/etarp-locacoes" element={<EtarpLocacoes />} />
       <Route path="/solucoes" element={<Solucoes />} />
       <Route path="/cases" element={<Cases />} />
       <Route path="/contato" element={<Contato />} />

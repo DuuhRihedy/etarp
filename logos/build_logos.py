@@ -73,7 +73,8 @@ def get_grupo_icon(is_dark_mode=False):
     return extract_svg_contents('_reference/logo-certo.svg', scale_factor=0.85, dx=0.7, dy=0.7, is_dark_mode=is_dark_mode, split_miolo=True)
 
 def get_etiquetas_icon(is_dark_mode=False):
-    return extract_svg_contents('_reference/logo-certo-e-melhor.svg', scale_factor=1.6, dx=11, dy=8, is_dark_mode=is_dark_mode)
+    # logo-certo-e-melhor.svg has an internal shift of -67 on X, so we need a large positive dx (e.g. dx=65) to prevent it from being clipped on the left
+    return extract_svg_contents('_reference/logo-certo-e-melhor.svg', scale_factor=0.72, dx=62, dy=-3, is_dark_mode=is_dark_mode, split_miolo=True)
 
 def get_automacao_icon(is_dark_mode=False):
     main_color = '#FFFFFF' if is_dark_mode else COLORS['automacao_navy']
@@ -105,7 +106,7 @@ def get_locacoes_icon(is_dark_mode=False):
     """
 
 
-SVG_WRAPPER = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="{viewbox}">
+SVG_WRAPPER = '''<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" viewBox="{viewbox}">
   <style>
     {style}
   </style>
@@ -132,29 +133,29 @@ def generate_brand(folder, icon_func, text_color, title, subtitle, slogan=None):
     
     create_svg(f"{folder}/icon.svg", "0 0 100 100", icon_func(False))
     
-    slogan_xml = f'<text x="135" y="85" class="slogan-text" font-size="9" fill="{text_color}">{slogan}</text>' if slogan else ''
+    slogan_xml = f'<text x="130" y="85" class="slogan-text" font-size="10" fill="{text_color}">{slogan}</text>' if slogan else ''
     horiz_content = f'''
     <g transform="translate(10, 10)">
       <g transform="translate(0, -5) scale(0.9)">
         {icon_func(False)}
       </g>
       <line x1="110" y1="5" x2="110" y2="90" stroke="{text_color}" stroke-width="2" />
-      <text x="130" y="55" class="logo-text" font-size="52" fill="{text_color}">{title}</text>
-      <text x="133" y="72" class="sub-text" font-size="11" fill="{text_color}">{subtitle}</text>
+      <text x="130" y="45" class="logo-text" font-size="44" fill="{text_color}">{title}</text>
+      <text x="130" y="65" class="sub-text" font-size="14" fill="{text_color}">{subtitle}</text>
       {slogan_xml}
     </g>
     '''
     create_svg(f"{folder}/horizontal.svg", "0 0 500 110", horiz_content)
 
-    slogan_dark_xml = f'<text x="135" y="85" class="slogan-text" font-size="9" fill="#FFFFFF">{slogan}</text>' if slogan else ''
+    slogan_dark_xml = f'<text x="130" y="85" class="slogan-text" font-size="10" fill="#FFFFFF">{slogan}</text>' if slogan else ''
     horiz_dark_content = f'''
     <g transform="translate(10, 10)">
       <g transform="translate(0, -5) scale(0.9)">
         {icon_func(True)}
       </g>
       <line x1="110" y1="5" x2="110" y2="90" stroke="#FFFFFF" stroke-width="2" />
-      <text x="130" y="55" class="logo-text" font-size="52" fill="#FFFFFF">{title}</text>
-      <text x="133" y="72" class="sub-text" font-size="11" fill="#FFFFFF">{subtitle}</text>
+      <text x="130" y="45" class="logo-text" font-size="44" fill="#FFFFFF">{title}</text>
+      <text x="130" y="65" class="sub-text" font-size="14" fill="#FFFFFF">{subtitle}</text>
       {slogan_dark_xml}
     </g>
     '''
@@ -169,8 +170,8 @@ def generate_brand(folder, icon_func, text_color, title, subtitle, slogan=None):
     create_svg(f"{folder}/square.svg", "0 0 120 120", square_content)
 
 if __name__ == '__main__':
-    generate_brand('grupo-etarp', get_grupo_icon, COLORS['automacao_navy'], 'ETARP', 'GRUPO EMPRESARIAL', slogan=None)
-    generate_brand('etarp-etiquetas', get_etiquetas_icon, COLORS['etiquetas_navy'], 'ETARP', 'ETIQUETAS E RÓTULOS', slogan='IMPRESSÃO QUE MARCA. QUALIDADE QUE PERMANECE.')
-    generate_brand('etarp-automacao', get_automacao_icon, COLORS['automacao_navy'], 'ETARP', 'AUTOMAÇÃO', slogan='CONECTANDO DADOS. IMPULSIONANDO RESULTADOS.')
-    generate_brand('etarp-locacoes', get_locacoes_icon, COLORS['locacoes_navy'], 'ETARP', 'LOCAÇÕES', slogan='SOLUÇÕES INTELIGENTES. EQUIPAMENTOS DE PONTA.')
+    generate_brand('../public/logos/grupo-etarp', get_grupo_icon, COLORS['automacao_navy'], 'ETARP', 'GRUPO EMPRESARIAL', slogan=None)
+    generate_brand('../public/logos/etarp-etiquetas', get_etiquetas_icon, COLORS['etiquetas_navy'], 'ETARP', 'ETIQUETAS E RÓTULOS', slogan='IMPRESSÃO QUE MARCA. QUALIDADE QUE PERMANECE.')
+    generate_brand('../public/logos/etarp-automacao', get_automacao_icon, COLORS['automacao_navy'], 'ETARP', 'AUTOMAÇÃO', slogan='CONECTANDO DADOS. IMPULSIONANDO RESULTADOS.')
+    generate_brand('../public/logos/etarp-locacoes', get_locacoes_icon, COLORS['locacoes_navy'], 'ETARP', 'LOCAÇÕES', slogan='SOLUÇÕES INTELIGENTES. EQUIPAMENTOS DE PONTA.')
     print("Logos generated successfully.")

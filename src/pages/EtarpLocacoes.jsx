@@ -6,11 +6,12 @@ import Card from '../components/ui/Card';
 import Button from '../components/ui/Button';
 import Accordion from '../components/ui/Accordion';
 import CtaBlock from '../components/sections/CtaBlock';
+import HtmlLogo from '../components/ui/HtmlLogo';
 import unidades from '../data/unidades.json';
 import './Hub.css';
 
-export default function FoxoneSoftware() {
-  const unit = unidades.find(u => u.id === 'foxone-software');
+export default function EtarpLocacoes() {
+  const unit = unidades.find(u => u.id === 'etarp-locacoes');
   if (!unit) return null;
 
   return (
@@ -21,7 +22,9 @@ export default function FoxoneSoftware() {
       {/* Hero Section */}
       <header className="hub-hero">
         <div className="hub-hero__container">
-          <Eyebrow color="cyan">DESENVOLVIMENTO DE SOFTWARE</Eyebrow>
+          <div style={{ marginBottom: 'var(--space-4)' }}>
+            <HtmlLogo brand={{ id: 'locacoes', folder: 'etarp-locacoes', color1: '#0D2B4E', color2: '#FF7A00', logoTitle: 'ETARP', logoSubtitle: 'LOCAÇÕES' }} scale={0.7} withBadge={true} />
+          </div>
           <h1 className="hub-hero__title">{unit.heroTitle}</h1>
           <p className="lead hub-hero__lead">{unit.heroLead}</p>
           <div className="hub-hero__actions">
@@ -124,7 +127,7 @@ export default function FoxoneSoftware() {
 
       {/* CTA */}
       <CtaBlock
-        title="Fale com a equipe da Foxone Software"
+        title="Fale com a equipe da Etarp Locações"
         lead="Transforme suas ideias em software robusto e integrado com sua operação industrial ou comercial."
         primaryText="Falar com Arquiteto de Software"
       />

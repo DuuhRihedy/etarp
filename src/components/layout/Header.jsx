@@ -3,13 +3,14 @@ import { createPortal } from 'react-dom';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import Button from '../ui/Button';
+import HtmlLogo from '../ui/HtmlLogo';
 import './Header.css';
 
 const NAV_ITEMS = [
   { label: 'Grupo', path: '/grupo' },
   { label: 'Etiquetas', path: '/etarp-etiquetas' },
   { label: 'Automação', path: '/etarp-automacao' },
-  { label: 'Foxone', path: '/foxone-software' },
+  { label: 'Locações', path: '/etarp-locacoes' },
   { label: 'Soluções', path: '/solucoes' },
   { label: 'Cases', path: '/cases' },
   { label: 'Branding', path: '/branding' },
@@ -39,8 +40,8 @@ export default function Header() {
   return (
     <header className={`header ${scrolled ? 'header--scrolled' : ''}`} id="site-header">
       <div className="header__inner">
-        <Link to="/" className="header__logo" aria-label="Grupo Etarp — Página inicial">
-          <img src={`${import.meta.env.BASE_URL}grupo-etarp.png`} alt="Grupo Etarp" height="40" />
+        <Link to="/" className="header__logo" aria-label="Grupo Etarp – Página inicial">
+          <HtmlLogo brand={{ id: 'grupo', folder: 'grupo-etarp', color1: '#0D2B4E', color2: '#0D2B4E', logoTitle: 'ETARP', logoSubtitle: 'GRUPO', iconSrc: 'logo-certo.svg' }} scale={0.4} />
         </Link>
 
         <nav className="header__nav-desktop" aria-label="Navegação principal">

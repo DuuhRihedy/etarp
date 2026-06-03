@@ -63,8 +63,8 @@ export default function Grupo() {
           <div className="timeline-item">
             <div className="timeline-year">2010s</div>
             <div className="timeline-content">
-              <h4>Nascimento da Foxone Software</h4>
-              <p>Criação do braço digital do grupo para responder à necessidade crescente de conectar equipamentos de automação a sistemas de retaguarda e mobilidade.</p>
+              <h4>Fundação da Etarp Locações</h4>
+              <p>Criação do braço de terceirização do grupo para responder à necessidade crescente de redução de custos com imobilizado, fornecendo equipamentos como serviço (HaaS).</p>
             </div>
           </div>
           <div className="timeline-item">

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 220" fill="none">
+  <defs>
+    <linearGradient id="cyanGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00D4FF"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 
+    Original shape analysis:
+    - Taller than wide (portrait orientation)
+    - Hex shape: short horizontal top/bottom, longer diagonals, medium vertical sides
+    - Looks like a pointy-left/pointy-right hexagon but with flat top/bottom
+    - Chanfros are steep (~50-55 degrees from horizontal)
+    - Gaps: upper-left diagonal + lower-right diagonal
+    
+    Hex vertices (going clockwise from top-left):
+    A: top-left       (62, 30)   start of short top edge
+    B: top-right       (138, 30)  end of short top edge
+    C: upper-right     (180, 68)  steep diagonal down-right
+    D: lower-right     (180, 148) end of right vertical
+    E: bottom-right    (138, 186) steep diagonal (GAP)
+    F: bottom-left     (62, 186)  end of short bottom edge
+    G: lower-left      (20, 148)  steep diagonal up-left
+    H: upper-left      (20, 68)   start of left vertical (GAP)
+  -->
+  
+  <!-- Body segment 1: H to A is the gap (upper-left), so we draw A->B->C->D -->
+  <!-- Body segment 2: D to E is the gap (lower-right), so we draw E->F->G->H -->
+  <g stroke="#2E45B5" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Top + right side (A -> B -> C -> D) -->
+    <path d="M 62,34 L 138,34 L 178,72 L 178,148"/>
+    <!-- Bottom + left side (E -> F -> G -> H) -->
+    <path d="M 138,186 L 62,186 L 22,148 L 22,72"/>
+  </g>
+  
+  <!-- Floating bars outside the two gaps -->
+  <g stroke="#2E45B5" stroke-width="10" stroke-linecap="round" fill="none">
+    <!-- Upper-left bar: from near H, going diagonal toward A direction, offset outward -->
+    <path d="M 28,56 L 72,18"/>
+    <!-- Lower-right bar: from near D, going diagonal toward E direction, offset outward -->
+    <path d="M 128,202 L 172,164"/>
+  </g>
+  
+  <!-- Data-line: cyan, enters from upper-left gap, goes horizontal to node -->
+  <line x1="36" y1="82" x2="118" y2="82" 
+        stroke="url(#cyanGrad)" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Bridge-line: navy, from node diagonal to lower-right gap -->
+  <line x1="120" y1="108" x2="168" y2="154" 
+        stroke="#0D1B7E" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Node circle -->
+  <circle cx="122" cy="105" r="7" fill="#0D1B7E"/>
+</svg>

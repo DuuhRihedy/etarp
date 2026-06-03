@@ -6,6 +6,7 @@ import Card from '../components/ui/Card';
 import Button from '../components/ui/Button';
 import Accordion from '../components/ui/Accordion';
 import CtaBlock from '../components/sections/CtaBlock';
+import HtmlLogo from '../components/ui/HtmlLogo';
 import unidades from '../data/unidades.json';
 import './Hub.css';
 
@@ -21,7 +22,9 @@ export default function EtarpAutomacao() {
       {/* Hero Section */}
       <header className="hub-hero">
         <div className="hub-hero__container">
-          <img src={`${import.meta.env.BASE_URL}etarp-automacao.png`} alt="Etarp Automação" className="hub-hero__logo" height="60" style={{ marginBottom: 'var(--space-4)', maxWidth: '100%', height: 'auto' }} />
+          <div style={{ marginBottom: 'var(--space-4)' }}>
+            <HtmlLogo brand={{ id: 'automacao', folder: 'etarp-automacao', color1: '#0D2B4E', color2: '#7AC943', logoTitle: 'ETARP', logoSubtitle: 'AUTOMAÇÃO COMERCIAL' }} scale={0.7} withBadge={true} />
+          </div>
           <h1 className="hub-hero__title">{unit.heroTitle}</h1>
           <p className="lead hub-hero__lead">{unit.heroLead}</p>
           <div className="hub-hero__actions">

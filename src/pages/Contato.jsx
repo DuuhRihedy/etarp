@@ -152,7 +152,7 @@ export default function Contato() {
                   <option value="">Selecione...</option>
                   <option value="etiquetas">Etarp Etiquetas e Rótulos</option>
                   <option value="automacao">Etarp Automação Comercial</option>
-                  <option value="software">Foxone Software</option>
+                  <option value="locacoes">Etarp Locações</option>
                   <option value="outros">Outros / Grupo Institucional</option>
                 </select>
                 {errors.unidade && <span className="error-text">{errors.unidade}</span>}
