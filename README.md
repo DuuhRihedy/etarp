@@ -1,60 +1,51 @@
-# 🏷️ Grupo Etarp
+# 🏷️ Grupo Etarp — Portal Institucional & Soluções Industriais
 
-Site institucional do **Grupo Etarp** (Etiquetas, Automação e Software), desenvolvido com foco em velocidade, acessibilidade e conversão.
+Website institucional desenvolvido para o **Grupo Etarp**, apresentando seu ecossistema de produtos em etiquetas autoadesivas, automação industrial/comercial e locação de equipamentos.
 
-<div align="center">
-  <!-- Adicione o link real de uma imagem do seu projeto aqui depois -->
-  <img src="https://raw.githubusercontent.com/DuuhRihedy/DuuhRihedy/main/assets/etarp-placeholder.png" alt="Etarp Demo" width="800">
-</div>
+![Status](https://img.shields.io/badge/Status-Finalizado-brightgreen?style=flat-square)
+![Vite](https://img.shields.io/badge/Vite-5.4-purple?style=flat-square&logo=vite)
+![React](https://img.shields.io/badge/React-18.3-blue?style=flat-square&logo=react)
+![GitHub Pages](https://img.shields.io/badge/Deploy-GitHub_Pages-2088FF?style=flat-square&logo=github)
 
-<br>
+---
 
-<div align="center">
-  ![Status](https://img.shields.io/badge/Status-Finalizado-success?style=flat-square)
-  ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
-  ![Vite](https://img.shields.io/badge/Vite-B73BFE?style=flat-square&logo=vite&logoColor=FFD62E)
-</div>
+## 🎯 Sobre o Projeto
 
-## 🚀 Features
+O **Grupo Etarp** atua no fornecimento de soluções corporativas para identificação e automação. A plataforma digital apresenta o catálogo de produtos e serviços divididos entre as três principais áreas de negócios do grupo, permitindo a prospecção de clientes e solicitações de orçamentos industriais.
 
-- ✅ **Landing Page Institucional:** Apresentação corporativa completa.
-- ✅ **SPA Rápida:** Transições instantâneas com React Router DOM.
-- ✅ **Tipografia Otimizada:** Integração com `@fontsource` (Inter, Space Grotesk, JetBrains Mono) para alta performance de fontes.
-- ✅ **Deploy Automático:** Configuração nativa com `gh-pages`.
+---
 
-## 🛠️ Tech Stack
+## ✨ Divisões & Funcionalidades
 
-### Frontend
-![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![Vite](https://img.shields.io/badge/Vite-B73BFE?style=flat-square&logo=vite&logoColor=FFD62E)
+- 🏷️ **Etarp Etiquetas (`/etiquetas`):** Catálogo de rótulos, etiquetas térmicas, ribbons e suprimentos para identificação industrial.
+- 🤖 **Etarp Automação (`/automacao`):** Soluções em software e hardware para automação de processos comerciais e linhas de produção.
+- 🖨️ **Etarp Locações (`/locacoes`):** Serviço de outsourcing e aluguel de impressoras térmicas de código de barras e coletores de dados.
+- 📊 **Cases de Sucesso & Soluções (`/cases`, `/solucoes`):** Demonstração de projetos implementados em clientes industriais.
+- 📞 **Central de Atendimento (`/contato`):** Formulário direto de contato comercial e localização das unidades.
 
-## ⚡ Quick Start
+---
 
-### Instalação
+## 🛠️ Tecnologias Utilizadas
 
-1. Clone o repositório
+- **Frontend:** React 18, Vite, React Router DOM v6
+- **Tipografia & Design:** `@fontsource/inter`, `@fontsource/space-grotesk`, `@fontsource/jetbrains-mono`
+- **Ícones:** Lucide React
+- **Deploy:** GitHub Pages (`gh-pages`)
+
+---
+
+## 🚀 Como Executar o Projeto Localmente
+
 ```bash
-git clone https://github.com/DuuhRihedy/grupo-etarp-site.git
-cd grupo-etarp-site
-```
+# 1. Clone o repositório
+git clone https://github.com/DuuhRihedy/etarp.git
+cd etarp
 
-2. Instale as dependências
-```bash
+# 2. Instale as dependências
 npm install
-```
 
-3. Rodando o servidor local
-```bash
+# 3. Execute o servidor local
 npm run dev
 ```
 
 Acesse em `http://localhost:5173`.
-
-## ⚙️ Deploy
-
-Para realizar o deploy no GitHub Pages:
-
-```bash
-npm run deploy
-```
-O build será gerado e enviado automaticamente para a branch `gh-pages`.
